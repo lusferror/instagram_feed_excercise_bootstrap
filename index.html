@@ -12,8 +12,9 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/520a2cf76f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
     <title>Instagram</title>
 </head>
 
@@ -26,39 +27,144 @@
                     <a class="navbar-brand" href="#">Instagram</a>
                 </div>
                 <div class="col-7 d-flex justify-content-end">
-                    <button class="btn btn-success">Create a new post</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new
+                        post</button>
                     <div class="dropdown">
-                        <button type="button" class="mx-3 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"><i class="bi bi-gear"></i></button>
-                        <ul class="dropdown-menu dropdown-menu-sm-end" >
+                        <button type="button" class="mx-3 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-expanded="false"><i class="bi bi-gear"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-sm-end">
                             <li><a class="dropdown-item">Profile</a></li>
                             <li><a class="dropdown-item">Acesibility</a></li>
                             <li><a class="dropdown-item">Privacy and Data</a></li>
-                            <li><hr class="dorpdown-divider"></li>
+                            <li>
+                                <hr class="dorpdown-divider">
+                            </li>
                             <li><a class="dropdown-item text-danger">Log out</a></li>
                         </ul>
                     </div>
                 </div>
-             
+
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid mt-3">
         <nav class="d-flex justify-content-center">
             <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                        class="bi bi-grid-3x3"></i></button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                        class="bi bi-square-fill"></i></button>
             </div>
-          </nav>
-          <div class="tab-content border-top" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">Home</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">Profile</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">Contact</div>
-            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
-          </div>
+        </nav>
+        <div class="tab-content border-top" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="container-sm mx-auto text-center">
+                    <div class="row p-2">
+                        <div class="col">
+                            <img src="/img/Dog.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;">
+                            <img src="/img/personas.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;">
+                            <img src="/img/paisaje.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;">
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col">
+                            <img src="/img/morena.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;object-fit: contain;" alt="">
+                            <img src="/img/torre.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;" alt="">
+                            <img src="/img/bicho.png" class="img-fluid img-thumbnail"
+                                style="width: 250px; height: 250px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="container border p-4">
+                    <div class="row-col d-flex justify-content-center mx-auto my-4">
+                        <div class="card col-5">
+                            <div class=" card-header bg-transparent">
+                                <p class="fs-6">My Crazy dog Spark!<span class="float-end">08/26</span></p>
+
+                            </div>
+                            <div class="row">
+                                <img class="img-fluid" src="/img/Dog.png" style="object-fit: contain;">
+                            </div>
+                            <div class="bg-transparent p-3" style="font-size: 12px;">
+                                <p class="fw-bold"> 204 Likes <br>
+                                    <span class="fw-normal">This is an example of a very good photo that you can post on
+                                        instagram</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-col d-flex justify-content-center mx-auto my-4">
+                        <div class="card col-5">
+                            <div class=" card-header bg-transparent">
+                                <p class="fs-6">Croatia<span class="float-end">08/26</span></p>
+
+                            </div>
+                            <div class="row">
+                                <img class="img-fluid" src="/img/paisaje.png" style="object-fit: contain;">
+                            </div>
+                            <div class="bg-transparent p-3" style="font-size: 12px;">
+                                <p class="fw-bold"> 204 Likes <br>
+                                    <span class="fw-normal">This is an example of a very good photo that you can post on
+                                        instagram</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-col d-flex justify-content-center mx-auto my-4">
+                        <div class="card col-5">
+                            <div class=" card-header bg-transparent">
+                                <p class="fs-6">Goal<span class="float-end">08/26</span></p>
+
+                            </div>
+                            <div class="row">
+                                <img class="img-fluid" src="/img/bicho.png" style="object-fit: contain;">
+                            </div>
+                            <div class="bg-transparent p-3" style="font-size: 12px;">
+                                <p class="fw-bold"> 204 Likes <br>
+                                    <span class="fw-normal">This is an example of a very good photo that you can post on
+                                        instagram</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Caption</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            <button class="btn btn-light border my-2 mr-2"><i class="bi bi-camera-fill"></i></button>
+                            <button class="btn btn-light border my-2 mr-2"><i class="bi bi-geo-alt-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
